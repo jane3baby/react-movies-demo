@@ -87,7 +87,7 @@ export default class Movies extends Component {
           <p>还剩下{filtered.length}条</p>
           <MoviesTable
             sortColumn={sortColumn}
-            onDelete={this.handleDelete}
+            onDelete={item => this.handleDelete(item)}
             onLike={this.handleLike}
             movies={movies}
             onSort={this.handleSort}
